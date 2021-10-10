@@ -1,0 +1,20 @@
+Create a user-
+
+enduser_body=$(< <(cat <<EOF
+{
+  "person": {
+    "name": "Nayiem Willems",
+    "email": "nayiem@domain.com",
+    "date_of_birth": "1992-10-26",
+    "telephone": "01234567890"
+  },
+  "enduser_meta": {
+    "primary_account": [],
+    "account_ordering": []
+  }
+}
+EOF
+))
+
+APIKEY="APIKEY"
+
